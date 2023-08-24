@@ -34,6 +34,7 @@ namespace Shopping.DAL.Concrete.EntityFramework.Context
             modelBuilder.ApplyConfiguration(new OrderDetailMap());
             modelBuilder.ApplyConfiguration(new OrderMap());
             modelBuilder.ApplyConfiguration(new UserMap());
+            modelBuilder.ApplyConfiguration(new CartMap());
 
 
             base.OnModelCreating(modelBuilder);

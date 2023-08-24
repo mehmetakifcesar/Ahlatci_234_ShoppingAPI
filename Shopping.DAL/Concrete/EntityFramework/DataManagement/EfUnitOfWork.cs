@@ -37,6 +37,9 @@ namespace Shopping.DAL.Concrete.EntityFramework.DataManagement
         public IOrderRepository OrderRepository { get; }
         public IOrderDetailRepository OrderDetailRepository { get; }
         public ICategoryRepository CategoryRepository { get; }
+
+        public ICartRepository CartRepository { get; } 
+
         public async Task<int> SaveChangeAsync()
         {
             foreach (var item in _shoppingContext.ChangeTracker.Entries<AuditableEntity>())
